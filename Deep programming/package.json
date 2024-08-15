@@ -1,0 +1,27 @@
+{
+  "name": "programming-tips",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "suppress-warnings": "export NODE_NO_WARNINGS=1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "ts": "node --loader ts-node/esm"
+  },
+  "jest": {
+    "transform": {
+      "^.+.tsx?$": [
+        "ts-jest",
+        {}
+      ]
+    }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.3",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "@types/node": "^22.3.0",
+    "typescript": "^5.5.4"
+  }
+}
